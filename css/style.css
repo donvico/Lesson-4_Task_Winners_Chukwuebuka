@@ -14,6 +14,7 @@ html{
     width: 100%;
 	text-align: justify;
 }
+/* header begins */
 header{
     background-color: red;
     position: fixed;
@@ -59,22 +60,23 @@ header a{
     color: white;
     font-family: rob;
 } 
-.i1st img{
+/* header ends */
+/* duo */
+.list img{
     display: none;
     width: 100%;
     max-width: 1200px;
 }
-main{
-    flex: 1;
-    /* margin-top: 100px; */
-}
-.main1, .duo{
-    margin: 20px;
-}
 .duo{
-    margin-top: 90px;
+    padding: 0px 18px 18px;
+    margin-top: 120px;
 }
-
+.main1{
+    padding: 0px 18px 18px;
+}
+/* .main1, .duo{
+    margin: 20px;
+} */
 .img1{
     position: relative;
     width: 60px;
@@ -92,24 +94,28 @@ main{
     font-weight: 600;
     font-size: large;
 }
+/* duo ends */
+
+/* main begins */
+main{
+    flex: 1;
+    padding: 0px 18px 18px;
+    /* margin-top: 100px; */
+}
 .writeup :first-child{
     font-size: 1.49rem;
-    margin: 50px 0 30px 0;
+    margin: 10px 0 30px 0;
 }
-.writeup p{
+/* .writeup p{
     margin: 0px 0 20px 0;
     font-size: 1.19rem;
-}
-.todo h2{
+} */
+/* .todo h2{
     margin: 40px 0 6px;
-}
-.todo p{
+} */
+/* .todo p{
     margin: 0 0 30px;
-}
-figure{
-    /* width: 800px; */
-    /* height: 30px; */
-}
+} */
 figure img{
     width: 100%;
     /* height: 400px; */
@@ -142,10 +148,9 @@ code{
 .fig2 {
     margin: 70px 0 0 0;
 }
-.discord figure, .whatsapp figure, .twitter figure, .tiktok figure, .reddit figure{
+main figure{
     margin-bottom: 50px;
 }
-
 .imm img{
     height: 169px;
     width: 100%;
@@ -190,6 +195,7 @@ button{
     background-color: #DFDFE2;
     border: 3px solid black;
 }
+/* main ends */
 /* FOOTER */
 .footer-container {
 	background-color: #eeeef0;
@@ -218,6 +224,9 @@ footer h4 {
 
 
 @media screen and (width >= 500px) {
+    main{
+        padding: 25px 35px 0px;
+    }
     .header1 a{
         display: contents;
     }
@@ -275,20 +284,26 @@ footer h4 {
     }
 }
 @media screen and (width >= 701px) { 
-    .i1st img{
+    .list img{
         display: initial;
     }
     /* .duo{
         width: 100%;
     } */
      main{
-        padding: 0 52px 52px;
+        padding: 35px 49px 0px;
     }
 }
 
 @media screen and (width >= 800px) {
     html{
         font-size: 18px;
+    }
+    .duo, .main1{
+        padding: 0 32px;
+    }
+    main{
+        padding: 40px 56px 0;
     }
 	.footer-aside{
 		display: grid;
