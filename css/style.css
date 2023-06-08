@@ -1,53 +1,276 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    width: 100%;
+}
+header{
+    background-color: red;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+ .header1{
+    background-color: rgb(10,10,35);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px
+}
+.header1 a{
+    display: none;
+    text-decoration: none;
+}
+.logo{
+    width: 250px;
+    height: 100px; 
+}
+.header1 img{
+    width: 100%;
+    height: 50px;
+}
+.header1 button{
+    background-color: rgb(254,191,66);
+    width: 90px;
+    height: 30px;
+    border: 3px solid rgb(254,172,50);
+    margin: 9px 15px;
+}
+.header2{
+    background-color: rgb(0,46,173);
+   text-align: center;
+   color: white;
+   height: 45px;
+}
+.header2 p{
+    padding: 10px;
+}
+header a{
+    color: white;
+    font-family: rob;
+} 
+.i1st{
+    display: none;
+}
+main{
+    flex: 1;
+    margin-top: 100px;
+}
+.main1, .duo{
+    margin: 20px;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.img1{
+    position: relative;
+    width: 60px;
+    margin: 40px 0 20px;
+}
+.img1 img{
+    width: 100%;
+    height: 60px;
+}
+.name{
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    width: 100px;
+    font-weight: 600;
+    font-size: large;
+}
+.writeup :first-child{
+    font-size: 1.49rem;
+    margin: 50px 0 30px 0;
+}
+.writeup p{
+    margin: 0px 0 20px 0;
+    font-size: 1.19rem;
+}
+.todo h2{
+    margin: 40px 0 6px;
+}
+.todo p{
+    margin: 0 0 30px;
+}
+figure{
+    /* width: 800px; */
+    /* height: 30px; */
+}
+figure img{
+    width: 100%;
+    /* height: 400px; */
+}
+figcaption{
+    text-align: center;
+    margin-top: 20px;
+}
+.blog h3, .ecommerce-app h3, .reddit h3, .discord h3, .whatsapp h3, .twitter h3, .tiktok h3, .react h3{
+    font-size: 1.63rem;
+    margin-top: 50px;
+}
+.blog li, .ecommerce-app li, .reddit li, .discord li, .whatsapp li, .twitter li, .tiktok li, .react li{
+    margin: 16px;
+    font-size: 1.19rem;
+}
+.blog p, .jiggy p, .ecommerce-app p, .reddit p, .discord p, .whatsapp p, .twitter p, .tiktok p, .react p{
+    margin: 16px 0 25px 0;
+    font-size: 1.19rem;
+}
+.blog h2, .ecommerce-app h2, .reddit h2, .discord h2, .whatsapp h2, .twitter h2, .tiktok h2, .react h2, .todo h2{
+    font-size: 1.89rem;
+    margin: 40px 0 10px 0;
+}
+code{
+    background-color: #D0D0D5;
+    padding: 0 5px 2px;
+    font-size: 0.95rem;
+}
+.fig2 {
+    margin: 70px 0 0 0;
+}
+.discord figure, .whatsapp figure, .twitter figure, .tiktok figure, .reddit figure{
+    margin-bottom: 50px;
 }
 
-body {
-	line-height: 1;
-	width: 100%;
+.imm img{
+    height: 169px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+em, .img2 a{
+    font-size: 1.19em;
+}
+hr{
+    margin-top: 50px;
+}
+.img3{
+    height: 0px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.img3 img{
+    height: 65px;
+    margin: 10px 0 ;
+}
+.name2{
+    position: absolute;
+    top: 5px;
+    left: 90;
+}
+.img3 hr{
+    margin-bottom: 10px;
+}
+.test{
+    margin-top: 110px;
+}
+.test p{
+    font-size: 1.19em;
+}
+.test :nth-child(2){
+    margin: 38px 0 5px;
+}
+button{
+    padding: 5px;
+    font-size: 1.05em;
+    color: #0A0A23;
+    background-color: #DFDFE2;
+    border: 3px solid black;
+}
+footer{
+    background-color: rgb(238,238,240);
+    color: black;
+    line-height: 1.6;
+    padding: 40px 15px;
+    /* color: #1B1B32; */
+    position: relative;
+    color: #1b1b32;
+    overflow-x: hidden;
+}
+.foot, .foot1{
+    padding: 0 15px;
+    margin: 0 0 30px;
+}
+.foot p{
+    margin: 0 0 14.5px;
+}
+.foot strong{
+    font-size: 1.2em;
+    color: black;
+}
+.foot strong a{
+    text-decoration: underline;
+}
+footer a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+footer li{
+    list-style: none; 
+    padding: 5px 0;
+}
+footer h4{
+    text-align: center;
+}
+.li1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.li1 a{
+    padding: 5px 10px;
 }
 
-ol, ul {
-	list-style: none;
+@media screen and (width >= 500px) {
+    .header1 a{
+        display: contents;
+    }
+    .header2 p{
+        font-size: 1.1em;
+    }
 }
-
-blockquote, q {
-	quotes: none;
+@media screen and (width >= 501px) {
+    main p, main h3, main h2, figure, main ul, em,.imm img, .react strong{
+        padding: 0px 35px;
+    }
+    .duo h1{
+        font-size: 3.1rem;
+        line-height: 50px;
+    }
+    .duo h6{
+        font-size: 0.9rem;
+    }
+    .imm img{
+        width: 88%;
+    }
+    .img3{
+        margin: 30px;
+    }
+    .img3 p{
+        padding: 0;
+    }
+    .foot1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
-
-blockquote::before, blockquote::after,
-q::before, q::after {
-	content: '';
-	content: none;
+@media screen and (width >= 701px) {
+    .i1st{
+        display: block;
+    }
+    .i1st img{
+        width: 100%;
+    }
+    main{
+        width: 50%;
+        padding: 0 52px 52px;
+    }
+    .duo{
+        width: 100%;
+    }
 }
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Do not write a css rule above here! Use the space below  */
-
-
-/* Write your css below here */
