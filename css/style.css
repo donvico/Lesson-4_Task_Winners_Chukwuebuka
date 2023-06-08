@@ -12,16 +12,16 @@ html{
     flex-direction: column;
     line-height: 2em;
     width: 100%;
-	text-align: justify;
 }
 /* header begins */
+
 header{
     background-color: red;
     position: fixed;
     z-index: 2;
     width: 100%;
 }
- .header1{
+.header1{
     background-color: rgb(10,10,35);
     display: flex;
     justify-content: space-between;
@@ -101,6 +101,7 @@ main{
     flex: 1;
     padding: 0px 18px 18px;
     /* margin-top: 100px; */
+    text-align: justify;
 }
 .writeup :first-child{
     font-size: 1.49rem;
@@ -200,6 +201,8 @@ button{
 .footer-container {
 	background-color: #eeeef0;
 	padding: 20px;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 footer a {
@@ -220,6 +223,7 @@ footer a {
 
 footer h4 {
 	text-align: center;
+    margin-top: 40px;
 }
 
 
@@ -331,4 +335,39 @@ footer h4 {
     main{
         width: 70%;
     }
+   .footer-container{
+    padding: 40px;
+   }
+}
+@media screen and (width >=1200px){
+	.footer-container {
+		padding: 20px 40px;
+	}
+	.footer-top {
+		display: flex;
+		gap: 20px;
+	}
+
+	.footer-main {
+		flex: 1;
+		padding: 20px;
+		margin: 1px;
+	}
+
+	.footer-aside {
+		flex: 1;
+	}
+
+	.footer-aside h5 {
+		margin-bottom: -100px;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid #b0b3bb;
+		padding: 20px 0;
+	}
+
+	.footer-bottom h5 {
+		display: none;
+	}
 }
