@@ -3,6 +3,9 @@
     padding: 0;
 	box-sizing: border-box;
 }
+html{
+    font-size: 16px;
+}
 .container{
     min-height: 100vh;
     display: flex;
@@ -56,15 +59,20 @@ header a{
     color: white;
     font-family: rob;
 } 
-.i1st{
+.i1st img{
     display: none;
+    width: 100%;
+    max-width: 1200px;
 }
 main{
     flex: 1;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .main1, .duo{
     margin: 20px;
+}
+.duo{
+    margin-top: 90px;
 }
 
 .img1{
@@ -110,19 +118,19 @@ figcaption{
     text-align: center;
     margin-top: 20px;
 }
-.blog h3, .ecommerce-app h3, .reddit h3, .discord h3, .whatsapp h3, .twitter h3, .tiktok h3, .react h3{
+main h3{
     font-size: 1.63rem;
     margin-top: 50px;
 }
-.blog li, .ecommerce-app li, .reddit li, .discord li, .whatsapp li, .twitter li, .tiktok li, .react li{
+main li{
     margin: 16px;
     font-size: 1.19rem;
 }
-.blog p, .jiggy p, .ecommerce-app p, .reddit p, .discord p, .whatsapp p, .twitter p, .tiktok p, .react p{
+main p{
     margin: 16px 0 25px 0;
-    font-size: 1.19rem;
+    font-size: 1.22rem;
 }
-.blog h2, .ecommerce-app h2, .reddit h2, .discord h2, .whatsapp h2, .twitter h2, .tiktok h2, .react h2, .todo h2{
+main h2{
     font-size: 1.89rem;
     margin: 40px 0 10px 0;
 }
@@ -204,7 +212,7 @@ footer a {
 	margin: auto;
 }
 
-footer h5 {
+footer h4 {
 	text-align: center;
 }
 
@@ -223,7 +231,7 @@ footer h5 {
 		column-gap: 10px;
 	}
 
-	h5 {
+	h4 {
 		grid-column: 1/3;
 		grid-row: 1/2;
 	}
@@ -241,7 +249,7 @@ footer h5 {
 }
 
 @media screen and (width >= 501px) {
-    main p, main h3, main h2, figure, main ul, em,.imm img, .react strong{
+    main{
         padding: 0px 35px;
     }
     .duo h1{
@@ -266,31 +274,30 @@ footer h5 {
         flex-wrap: wrap;
     }
 }
-@media screen and (width >= 701px) {
-    .i1st{
-        display: block;
-    }
+@media screen and (width >= 701px) { 
     .i1st img{
-        width: 100%;
+        display: initial;
     }
-    main{
-        width: 50%;
+    /* .duo{
+        width: 100%;
+    } */
+     main{
         padding: 0 52px 52px;
     }
-    .duo{
-        width: 100%;
-    }
 }
-@media screen and (width >= 800px) {
 
-	.footer-aside {
+@media screen and (width >= 800px) {
+    html{
+        font-size: 18px;
+    }
+	.footer-aside{
 		display: grid;
 		grid-template-columns: repeat(3, auto);
 		grid-template-rows: repeat(2, auto);
 		column-gap: 10px;
 	}
 
-	h5 {
+	h4 {
 		grid-column: 1/4;
 	}
 
@@ -304,4 +311,9 @@ footer h5 {
 		grid-row: 2/3;
 		margin-top: 165px;
 	}
+}
+@media screen and (width >= 900px) {
+    main{
+        width: 70%;
+    }
 }
