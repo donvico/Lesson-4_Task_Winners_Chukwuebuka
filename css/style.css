@@ -14,7 +14,38 @@ html{
     width: 100%;
 }
 /* header begins */
+.leftnav {
+    width: 30%;
+    height: 31px;
+    margin: 10px 30px 20px;
+    background-color: #3b3b4f;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    /* display: none; */
+}
 
+.leftnav input {
+    width: 90%;
+    /* height: 26px; */
+    background-color: #3b3b4f;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.material-symbols-outlined {
+    color: #b2b2ba;
+    padding: 8px;
+}
+
+.leftnav input::placeholder {
+    font-family: Lato, sans-serif;
+    color: #b2b2ba;
+    font-size: 20px;
+}
 header{
     background-color: red;
     position: fixed;
@@ -46,6 +77,7 @@ header{
     height: 30px;
     border: 3px solid rgb(254,172,50);
     margin: 9px 15px;
+    font-size: 1.05em;
 }
 .header2{
     background-color: rgb(0,46,173);
@@ -189,7 +221,7 @@ hr{
 .test :nth-child(2){
     margin: 38px 0 5px;
 }
-button{
+main button{
     padding: 5px;
     font-size: 1.05em;
     color: #0A0A23;
@@ -339,9 +371,21 @@ footer h4 {
     padding: 40px;
    }
 }
+@media screen and (width >= 1000px) {
+    .leftnav{
+        /* display: initial; */
+    }
+ 
+}
 @media screen and (width >=1200px){
+    main{
+        padding-left:  149px;
+    }
+    .duo, .main1{
+        margin-left: 120px;
+    }
 	.footer-container {
-		padding: 20px 40px;
+		padding: 20px 120px;
 	}
 	.footer-top {
 		display: flex;
@@ -350,7 +394,7 @@ footer h4 {
 
 	.footer-main {
 		flex: 1;
-		padding: 20px;
+		/* padding: 20px; */
 		margin: 1px;
 	}
 
