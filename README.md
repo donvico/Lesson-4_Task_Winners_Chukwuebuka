@@ -1,4 +1,4 @@
-**LESSON THREE TASK SIX**
+**LESSON FOUR TASK**
 ---
 **How to run/test this project**
 - Ensure you have git installed properly on your machine
