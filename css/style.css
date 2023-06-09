@@ -14,6 +14,11 @@ html{
     width: 100%;
 }
 /* header begins */
+.header1 {
+    padding-left: 10px;
+    display: flex;
+}
+
 .leftnav {
     width: 30%;
     height: 31px;
@@ -22,7 +27,7 @@ html{
     align-items: center;
     display: flex;
     gap: 10px;
-    /* display: none; */
+    display: none;
 }
 
 .leftnav input {
@@ -46,10 +51,9 @@ html{
     font-size: 20px;
 }
 .middle {
-    width: 22%;
-    margin-left: 0;
+    /* width: 22%; */
 	cursor: pointer;
-    margin-right: 350px;
+    /* margin-right: 350px; */
     display: flex;
     align-items: center;
 }
@@ -57,7 +61,6 @@ html{
 .middle img {
     height: 30px;
     width: 100%;
-    object-fit: none;
 }
 .last{
     display: flex;
@@ -69,7 +72,10 @@ html{
     font-family: 'Roboto Mono', monospace;
     font-weight: 900;
     padding: 7px 15px;
+    text-decoration: none;
+    display: none;
 }
+
 header{
     background-color: red;
     position: fixed;
@@ -83,10 +89,7 @@ header{
     align-content: center;
     height: 45px
 }
-.header1 a{
-    display: none;
-    text-decoration: none;
-}
+
 
 .header1 button{
     background-color: rgb(254,191,66);
@@ -111,8 +114,12 @@ header a{
 } 
 /* header ends */
 /* duo */
-.list img{
+.list {
     display: none;
+    height: 100px;
+}
+
+.list img{
     width: 100%;
     max-width: 1200px;
 }
@@ -335,7 +342,7 @@ footer h4 {
     }
 }
 @media screen and (width >= 701px) { 
-    .list img{
+    .list {
         display: initial;
     }
     /* .duo{
@@ -388,7 +395,7 @@ footer h4 {
 }
 @media screen and (width >= 1000px) {
     .leftnav{
-        /* display: initial; */
+        display: flex;
     }
  
 }
